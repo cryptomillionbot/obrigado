@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+:root {
+    --font-primary: "Montserrat";
+    --font-secundary: "Contrail One";
+    --font-section1h1: "Poppins";
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 13.5vh;
+    background-color: rgb(118,191,59);
+    color: white;
+    font-family: var(--font-primary), var(--font-secundary);
+    font-size: 0.8em;
+
+}
+
+.front {
+
+    background-color: rgb(0,7,71);
+    width: 100%;
+    height: 83.5vh;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+    
+}
+
+.linha{
+
+    margin: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    }
+  
+    .coluna-50 {
+      width: 50%;
+  }
+  
+.front .chamada2 {
+  margin-bottom: 0.6em;
+  font-weight: 800, bolder;
+  font-size: 3em;
+}
+
+
+.comentario {
+  margin-top: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.preco {
+
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.btn {
+  width: 400px;
+}
+
+.subtitleButton {
+  font-weight: 200;
+}
+
+.ladoDireito {
+  margin: 30px;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer {
+  background-color: rgb(0,7,71);
+  width: 100%;
+  height: 4vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 960px) {
+    .front {
+      font-size: 1.02em;
+      align-items:flex-start;
+    }
+    .linha {
+      margin: 5em;
+    }
+
+    .comentario {
+      font-size: 1.15em;
+    }
+    .ladoDireito {
+      margin-top: 120px;
+      margin-left: 170px;
+
+      
+    }
+    .imagemPlanilha {
+      width: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 860px)  and (min-width: 780px) {
+  .front {
+    font-size: 0.92em;
+    align-items:flex-start;
+  }
+
+
+  .linha {
+    margin: 5em;
+  }
+
+  .comentario {
+    font-size: 1.15em;
+  }
+  .ladoDireito {
+    margin-top: 120px;
+    margin-left: 170px;
+  }
+
+  .btn  {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .buttonOrange {
+
+    width: 280px;
+    font-size: 18px !important;
+  }
+  .imagemPlanilha {
+    width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 760px)  and (min-width: 451px){
+  .titulo {
+    font-size: 1.2em;
+  }
+  .front {
+    font-size: 0.82em;
+
+  }
+
+
+  .linha {
+    justify-content: center;
+    align-items:center;
+    flex-flow: column-reverse;
+  }
+  .coluna-50 {
+    width: 90%;
+  }
+  
+  .comentario {
+    font-size: 1.55em;
+  }
+  .ladoDireito {
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+
+  .btn  {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .preco {
+    font-size: 1.4em;
+  }
+  .buttonOrange {
+
+    width: 380px;
+    font-size: 24px !important;
+  }
+  .imagemPlanilha {
+    width: 250px;
+  }
+}
+
+/* celular */
+
+
+@media only screen and (max-width: 450px)  and (min-width: 390px){
+
+  .titulo {
+    font-size: 1.2em;
+  }
+  .front {
+    font-size: 0.82em;
+
+  }
+
+
+  .linha {
+    justify-content: center;
+    align-items:center;
+    flex-flow: column-reverse;
+    margin: 0em;
+  }
+  .coluna-50 {
+    width: 90%;
+  }
+  
+  .comentario {
+    font-size: 1.55em;
+  }
+  .ladoDireito {
+    margin-top: 80px;
+    margin-left: 60px;
+  }
+
+  .btn  {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .preco {
+    font-size: 1.4em;
+  }
+  .buttonOrange {
+    margin-left: 30px;
+    width: 280px;
+    font-size: 16px !important;
+  }
+  .imagemPlanilha {
+    width: 200px;
+  }
+
+}
+
+
+@media only screen and (max-width: 389px)  and (min-width: 250px){
+
+  .titulo {
+    font-size: 1em;
+  }
+  .front {
+    font-size: 0.74em;
+    margin: 0;
+
+  }
+
+
+  .linha {
+    justify-content: center;
+    align-items:center;
+    flex-flow: column-reverse;
+    margin: 5px;
+    width: 300px;
+  }
+  .coluna-50 {
+    width: 95%;
+  }
+  
+  .comentario {
+    font-size: 1.55em;
+  }
+  .ladoDireito {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .btn  {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .preco {
+    font-size: 1.4em;
+  }
+  .buttonOrange {
+    margin-left: 10px;
+    width: 260px;
+    font-size: 16px !important;
+  }
+  .imagemPlanilha {
+    margin-left: 30px;
+    width: 200px;
+  }
+  .footer {
+    font-size: 0.8em;
+  }
+
+}
